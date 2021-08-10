@@ -31,7 +31,7 @@ func main() {
 func getHTTP(amount int) (response string) {
 	client := &http.Client{}
 
-	req, err := http.NewRequest("GET", "https://api.mojang.com/users/profiles/minecraft/"+usernameCheck(amount), nil)
+	req, err := http.NewRequest("GET", "https://api.mojang.com/users/profiles/minecraft/" + usernameCheck(amount), nil)
 
 	req.Header.Set("User-Agent", "test")
 	if err != nil {
